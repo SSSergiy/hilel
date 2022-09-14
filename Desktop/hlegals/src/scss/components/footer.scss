@@ -1,0 +1,162 @@
+//====================================================================================================
+
+//====================================================================================================
+//====================================================================================================
+.footer {
+  position: relative;
+  z-index: 1;
+  background: #f5f5fa;
+  .team & {
+    border-top-right-radius: rem(20);
+    border-top-left-radius: rem(20);
+  }
+
+  &__container {
+    @include adaptiveValue("padding-top", 35, 20);
+    @include adaptiveValue("padding-bottom", 35, 118);
+    border-top: 2px solid #e6e6f0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    @media (max-width: em(768)) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .team & {
+      border-top: none;
+    }
+  }
+  &__locotion {
+    flex: 0 1 50%;
+    display: flex;
+    margin-bottom: rem(21);
+    flex-wrap: wrap;
+    @media (max-width: em(768)) {
+      flex: 1 1 100%;
+      align-items: center;
+      justify-content: center;
+      order: 1;
+    }
+  }
+  &__locotion-text {
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: rem(16);
+    line-height: math.div(20, 16);
+    color: #323264;
+    @media (max-width: em(433)) {
+      flex: 1 1 100%;
+    }
+  }
+  &__locotion-link {
+    align-items: center;
+    font-family: $fontFamily;
+    font-weight: 700;
+    font-size: rem(12);
+    line-height: math.div(19, 12);
+    letter-spacing: em(1);
+    text-transform: uppercase;
+    color: #24a3ff;
+    @media (max-width: em(433)) {
+      flex: 1 1 100%;
+    }
+  }
+  &__description {
+    display: flex;
+    justify-content: end;
+    flex: 0 1 50%;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: math.div(20, 16);
+    color: #b3b3ba;
+    @media (max-width: em(768)) {
+      flex: 1 1 100%;
+      justify-content: center;
+      order: 3;
+    }
+    @media (max-width: em(400)) {
+      max-width: rem(257);
+    }
+  }
+  &__info {
+    align-items: center;
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    @media (max-width: em(768)) {
+      flex: 1 1 100%;
+      justify-content: center;
+      order: 1;
+      margin-bottom: rem(31);
+      @include adaptiveValue("margin-bottom", 31, 18);
+    }
+  }
+  &__info-social {
+    @media (max-width: em(433)) {
+      flex: 1 1 100%;
+      margin-bottom: rem(10);
+    }
+  }
+  &__info-phone {
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(16);
+    line-height: math.div(20, 16);
+    color: #46466e;
+    @media (max-width: em(433)) {
+      flex: 1 1 100%;
+      margin-bottom: rem(10);
+    }
+  }
+  &__info-mail {
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(16);
+    line-height: math.div(20, 16);
+    color: #24a3ff;
+    @media (max-width: em(433)) {
+      flex: 1 1 100%;
+    }
+  }
+}
+.before {
+  align-items: center;
+  position: relative;
+  padding-left: rem(17);
+  margin-left: rem(8);
+  transition: all 0.3s ease 0s;
+}
+.before:hover {
+  color: #f0145a;
+}
+.before::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: #b3b3ba;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  @media (max-width: em(433)) {
+    display: none;
+  }
+}
+@media (max-width: em(433)) {
+}
+path {
+  transition: all 0.3s ease 0s;
+}
+.activ:hover path {
+  fill: #f0145a;
+}
+.activ:hover {
+  color: #f0145a;
+}
+//====================================================================================================

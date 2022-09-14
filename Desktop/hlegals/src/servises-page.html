@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('html/_head.htm',{
+"title":"servises-page"})
+
+<body class="body servisess servece-page">
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="main">
+      <section class="main__servece-page servece-page">
+        <div class="servece-page__container">
+          <div class="servece-page__item">
+            <div class="servece-page__item-img"><img
+                src="@img/services/servises-page/iconfinder_shopping-purse_353439.svg" alt="rectangle"></div>
+            <h2 class="servece-page__item-title">IT та електронна комеція</h2>
+            <p class="servece-page__item-description">
+              <span>Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична
+                робота відволікає вас
+                від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста.</span>
+              <span>До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як
+                важко в Україні
+                знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</span>
+            </p>
+            <button type="button" data-popup="#callback" class="servece-page__item-btn">Безкоштовна
+              консультація</button>
+          </div>
+          <div class="servece-page__referral">
+            <h6 class="servece-page__referral-title">Послуги цього напрямку:</h6>
+            <div class="servece-page__referral-items">
+              <ul class="servece-page__referral-item">
+                <li class="servece-page__referral-item-text">супровід інвестиційних проектів з розвитку портової
+                  інфраструктури;</li>
+                <li class="servece-page__referral-item-text">паспортизація ГТС, внесення інформації про них в
+                  обов'язкові бази даних і реєстри;</li>
+                <li class="servece-page__referral-item-text">оформлення дозвільної документації для будівництва портових
+                  терміналів;</li>
+                <li class="servece-page__referral-item-text">оформлення дозвільної та іншої обов'язкової документації,
+                  необхідної для здійснення діяльності в порту (дозвіл на викиди, висновок по ОВНС, РТК і ін.);</li>
+              </ul>
+              <ul class="servece-page__referral-item">
+                <li class="servece-page__referral-item-text">супровід процедур, пов'язаних з орендою державного майна в
+                  порту;</li>
+                <li class="servece-page__referral-item-text">супровід процедур, пов'язаних з підтвердженням статусу
+                  портового оператора, морського агента, лінії закордонного плавання;</li>
+                <li class="servece-page__referral-item-text">супровід процедур, пов'язаних з включенням компанії в межі
+                  порту;</li>
+                <li class="servece-page__referral-item-text">оскарження дій, пов'язаних з незаконним нав'язуванням
+                  послуг в порту компаніями-монополістами.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('html/_cases.htm',{})
+      @@include('html/__publications.htm',{
+      "title":"Рекомендуємо"
+      })
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

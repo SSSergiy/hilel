@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zxx">
+@@include('html/_head.htm',{
+"title":"contact"})
+
+<body class="body white contact">
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="main-contact">
+      <section class="main-contact__container">
+        <div class="main-contact__info">
+          <address class="main-contact__info-adres">Одеса,<br> Адміральський пр., 3</address>
+          <div class="main-contact__info-phone"><a href="tel:+380503901595" class="main-contact__phone-link">+38 (050)
+              390 15 95</a></div>
+          <div class="main-contact__info-mail"><a href="mailto:contact@hlegals.net"
+              class="main-contact__mail-link">contact@hlegals.net</a></div>
+          <a href="" class="main-contact__info-social">
+            <svg class="activ" width="38" height="38" viewBox="0 0 38 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                fill="#24A3FF" />
+            </svg>
+            <span class="main-contact__img-descriptions">Наша сторінка <br>в фейсбуці</span>
+          </a>
+        </div>
+        @@include('html/_form.htm',{})
+      </section>
+      <div class="main-contact__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15554.98904356714!2d30.729572325359044!3d46.433645105042594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63396894457b7%3A0x7f6c5236cbcb70c8!2z0JDQtNC80LjRgNCw0LvRjNGB0LrQuNC5INC_0YDQvtGB0L8uLCAzLCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1638097632875!5m2!1sru!2sua"
+          height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

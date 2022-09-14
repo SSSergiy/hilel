@@ -1,0 +1,138 @@
+.main {
+  .servisess & {
+    padding-top: rem(170);
+  }
+
+  &__services {
+  }
+}
+.services {
+  .servisess & {
+    padding-top: rem(20);
+    margin-bottom: rem(60);
+  }
+  margin-bottom: rem(20);
+  position: relative;
+  &::before {
+    content: "";
+    background-color: #cacadb;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    left: 20px;
+    height: rem(10);
+    border-radius: 0px 0px 12px 12px;
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    background-color: #e7e7f2;
+    position: absolute;
+    bottom: -20px;
+    right: 40px;
+    left: 40px;
+    height: rem(10);
+    border-radius: 0px 0px 12px 12px;
+    z-index: 1;
+  }
+
+  @include adaptiveValue("padding-bottom", 80, 20);
+  background: linear-gradient(
+    200.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
+  border-radius: 0px 0px 12px 12px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: rem(71);
+  }
+  &__title-block {
+  }
+  &__title-link {
+    font-size: rem(14);
+    line-height: math.div(17, 14);
+    letter-spacing: em(1);
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0.5;
+    .servisess & {
+      display: none;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    @include adaptiveValue("font-size", 42, 30);
+    line-height: math.div(50, 42);
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  &__cards-block {
+    display: grid;
+    row-gap: rem(57);
+    column-gap: rem(40);
+    grid-template-columns: repeat(auto-fit, minmax(rem(400), 1fr));
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr));
+    }
+  }
+  &__card-item {
+  }
+}
+.card-item {
+  .flex {
+    @media (max-width: $mobile) {
+      display: flex;
+      align-items: center;
+      gap: rem(10);
+    }
+  }
+  &__img {
+    @media (max-width: $mobile) {
+      flex: 0 1 20%;
+    }
+
+    img {
+      @media (max-width: $mobile) {
+        width: 60%;
+      }
+      // width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    margin-bottom: rem(20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(92);
+    height: rem(92);
+    background: #ffffff;
+    border-radius: rem(24);
+  }
+  &__title {
+    @include adaptiveValue("font-size", 24, 17);
+    line-height: math.div(28, 24);
+    color: #24a3ff;
+    margin-bottom: rem(16);
+
+  }
+  .item {
+    &::after {
+      content: "⟩⟩"
+      }
+  }
+  &__desctiption {
+    @include adaptiveValue("font-size", 18, 15);
+    line-height: math.div(26, 18);
+    color: #ffffff;
+  }
+}
+.services {
+  .servisess & {
+    padding-bottom: rem(44);
+  }
+}

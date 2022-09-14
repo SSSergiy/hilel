@@ -1,0 +1,61 @@
+.main {
+  &__hero {
+    background-image: url(../img/hero/SymbolLongleg.svg),
+      url(../img/hero/Frameright.svg), url(../img/hero/Frame2.svg),
+      url(../img/hero/Frameleft.svg),
+      linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7a425e 87.53%);
+    background-repeat: no-repeat;
+    background-position: 50% 100%, 0 0, 50% 143%, 100% 100%;
+    @include adaptiveValue("min-height", 800, 640);
+    min-width: 100%;
+    box-shadow: inset 0px -200px 79px -128px rgba(50, 50, 100, 0.98);
+    @media (max-width: $mobile) {
+      background: linear-gradient(
+        180deg,
+        rgba(50, 50, 100, 0) 16.67%,
+        #323264 100%
+      );
+      background-image: url(../img/hero/SymbolLongleg.svg),
+        linear-gradient(
+          42.01deg,
+          #323264 14.33%,
+          #323264 51.39%,
+          #7a425e 87.53%
+        );
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      box-shadow: inset 0px -125px 259px 0px rgb(50 50 100 / 98%);
+    }
+  }
+}
+.hero-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    padding-top: 48px;
+    text-align: center;
+    max-width: rem(595);
+    font-size: 38px;
+    line-height: 45px;
+    color: #ffffff;
+    margin: 0 auto;
+  }
+}
+.hero-main {
+  &__link {
+    position: relative;
+    width: rem(42);
+    height: rem(42);
+    left: 0;
+    @include adaptiveValue("bottom", -278, -180);
+    opacity: 0.5;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
+}
